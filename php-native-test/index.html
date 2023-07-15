@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Program PHP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            container: {
+                center: true,
+            },
+          }
+        }
+    </script>
+</head>
+
+<body>
+
+    <section id="test-page" class="container mx-auto py-8">
+        <form method="post" action="programs/main.php" class="max-w-md mx-auto bg-white rounded p-6 shadow-md">
+            <div class="mb-4">
+                <label for="count" class="block text-gray-700 font-bold mb-2 text-center">Masukkan jumlah perulangan:</label>
+
+                <input type="number" id="count" name="count" required class="w-full px-4 py-2 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500">
+            </div>
+
+            <div class="text-center">
+                <input type="submit" value="Submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            </div>
+        </form>
+    </section>    
+
+</body>
+
+</html>
